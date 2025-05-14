@@ -62,6 +62,30 @@
     line-height: 1.6;
   }
 
+  .experience-grid {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+
+  .why-us {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+
+  .values {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+
   .marquee {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 40px;
