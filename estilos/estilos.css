@@ -10,6 +10,7 @@
     margin: 0;
     padding: 0;
     line-height: 1.6;
+    text-align: justify;
   }
   header {
     background-image: url('../multimedia/logo3.png'); 
@@ -18,7 +19,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 60px 20px;
+    padding: 20px 20px;
     text-align: center;
     color: white; 
   }
@@ -55,46 +56,107 @@
   }
 
   .indexp-grid {
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 0 20px;
-    font-size: 1.1rem;
+    max-width: 2000px;
+    margin: auto;
+    padding: 30px;
+    font-size: x-large;
     line-height: 1.6;
   }
 
   .experience-grid {
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 0 20px;
-    font-size: 1.1rem;
+    max-width: 2000px;
+    margin: auto;
+    padding: 30px;
+    font-size: x-large;
     line-height: 1.6;
   }
 
   .why-us {
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 0 20px;
-    font-size: 1.1rem;
+    max-width: 2000px;
+    margin: auto;
+    padding: 30px;
+    font-size: x-large;
     line-height: 1.6;
+    text-align: center;
   }
 
   .values {
     max-width: 800px;
     margin: 40px auto;
     padding: 0 20px;
-    font-size: 1.1rem;
+    font-size: x-large;
     line-height: 1.6;
+    text-align: center;
+  }
+
+  .imagen {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .item {
+    height: 500px;
+    margin: 20px;
+    padding: 20px;
+  }
+
+  body .item:hover {
+    transform: scale(1.05);
+    transition: all 0.7s;
+  }
+
+  .item1 {
+    background-image: url(../multimedia/johncena.png);
+    background-size: cover;
+    background-position: center;
   }
 
   .marquee {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: grid;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 40px;
+    margin-top: 0px;
+    color: #883000;
+    text-shadow: 0 4px 0 gray;
   }
   
   section {
-    padding: 40px 20px;
-    max-width: 1000px;
+    padding: 0px;
+    max-width: 2000px;
     margin: auto;
+  }
+
+  .about-us {
+    max-width: 2000px;
+    margin: auto;
+    padding: 30px;
+    text-align: center;
+    font-size: x-large;
+  }
+
+  .our-mission {
+    max-width: 2000px;
+    margin: auto;
+    padding: 30px;
+    text-align: center;
+    font-size: x-large;
+  }
+
+  .our-team {
+    max-width: 2000px;
+    margin: auto;
+    padding: 30px;
+    text-align: center;
+    font-size: x-large;
+  }
+
+  .contact-us {
+    max-width: 2000px;
+    margin: auto;
+    padding: 30px;
+    text-align: center;
+    font-size: x-large;
   }
 
   footer {
@@ -106,13 +168,106 @@
   }
 
   /* Responsive */
-  @media (max-width: 768px) {
+  @media only screen and (min-width: 265px) and (max-width: 935px) {
+  .body {
+    box-sizing: border-box;
+    align-content: center;
+  }
   .navgrid ul {
     flex-direction: column;
     gap: 0.5rem;
   }
   header {
+    background-image: url('../multimedia/logo3.png'); 
+    position: relative;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 60px 20px;
+    text-align: center;
+    color: white; 
+  }
+  header {
     text-align: left;
     padding: 1rem;
   }
+  .header-grid {
+    display: grid;
+    box-sizing: border-box;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 1fr;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    font-size: 50px;
+  }
+  }
+
+  @media only screen and (min-width: 936px) and (max-width: 1140px) {
+    .body {
+    box-sizing: border-box;
+    align-content: center;
+    }
+    .navgrid ul {
+    flex-direction: column;
+    gap: 0.5rem;
+    }
+    header {
+    background-image: url('../multimedia/logo3.png'); 
+    position: relative;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px 20px;
+    text-align: center;
+    color: white; 
+    }
+    header {
+    text-align: left;
+    padding: 1rem;
+    }
+    .header-grid {
+    display: grid;
+    box-sizing: border-box;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 1fr;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    font-size: 50px;
+    }
+
+    .item {
+    height: 750px;
+    width: 600px;
+    margin: 20px;
+    padding: 20px;
+    position: relative;
+    left: 20vw;
+    }
+  }
+
+  @media only screen and (min-width: 1141px) {
+    .item {
+      height: 750px;
+      width: 600px;
+      margin: 20px;
+      padding: 20px;
+      position: relative;
+      left: 35vw;
+    }
+
+    header {
+      background-image: url('../multimedia/logo3.png'); 
+      position: relative;
+      height: 600px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      padding: 60px 20px;
+      text-align: center;
+      color: white; 
+    }
   }
